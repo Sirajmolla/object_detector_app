@@ -24,11 +24,15 @@ pytest -vs utils/
 - [TensorFlow 1.2](https://www.tensorflow.org/)
 - [OpenCV 3.0](http://opencv.org/)
 
+
 ## Notes
 - OpenCV 3.1 might crash on OSX after a while, so that's why I had to switch to version 3.0. See open issue and solution [here](https://github.com/opencv/opencv/issues/5874).
-- Moving the `.read()` part of the video stream in a multiple child processes did not work. However, it was possible to move it to a separate thread.
+- Moving the `.read()` part of the video stream in a multiple children processes did not work. However, it was possible to move it to a separate thread.
+
 
 ## Copyright
 
 See [LICENSE](LICENSE) for details.
 Copyright (c) 2017 [Dat Tran](http://www.dat-tran.com/).
+
+
